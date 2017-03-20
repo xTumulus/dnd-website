@@ -4,15 +4,28 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { DmComponent } from './dmaster/dm-component.component';
+import { LoreComponent } from './lore/lore-component.component';
+import { PlayerComponent } from './player/player-component.component';
+import { RulesComponent } from './rules/rules-component.component';
+import { HomeComponent } from './home/home.component';
+
+import { ROUTING } from './app.routing';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DmComponent,
+    LoreComponent,
+    PlayerComponent,
+    RulesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]

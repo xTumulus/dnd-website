@@ -1,3 +1,30 @@
-<h1>
-  {{title}}
-</h1>
+<div id='page_banner'>
+  <h1 id='page_title'>
+    {{title}}
+  </h1>
+</div>
+
+<div id='main'>
+  <div id='main_tab' class='tab'>
+    <a [routerLink] = "['home']">Home</a>
+    <a [routerLink] = "['dm']">DM</a>
+    <a [routerLink] = "['player']">Player</a>
+    <a [routerLink] = "['guest']">Guest</a>    
+  </div>
+
+  <div id='main_sidebar' class='sidebar'>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a [routerLink] = "['lore']">Lore</a>    
+    <a [routerLink] = "['rules']">Rules</a>    
+    <a [routerLink] = "['account']">Account</a>    
+    <a [routerLink] = "['char_create']">Create Character</a>    
+    <a [routerLink] = "['game']">Current Game</a>    
+  </div>
+
+  <div class="content_body">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  This is here if the sidebar changes to collapsable-->
+</div>

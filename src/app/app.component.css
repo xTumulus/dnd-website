@@ -1,0 +1,127 @@
+/*xxxxxxxxxxxxxxxxxxxxx BANNER xxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+#page_title{
+    color: #FA9623;
+    padding-left: 15px;
+    font-family: Courier New, Courier, monospace;
+    font-size: 3em;
+}
+
+#sub_title{
+    color: #FAFAF9;
+    padding-left: 25px;
+    font-family: Courier New, Courier, monospace;
+    font-size: 1.2em;    
+}
+
+#page_banner{
+    background: url('../assets/images/banner.png');
+    background-size: 100% 100%;
+    padding-top: 20px;
+    margin-top: 5px;
+    display: block;
+    width: 35%;
+    height: 120px;
+    margin-left: 0;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxx TABS xxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/* Style the div */
+.tab {
+    position: relative;
+    margin-left: 120px;
+    margin-right: 0px;
+    padding: 5px;
+    width: 90.89%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #111;
+}
+
+/* Float the tab items side by side */
+.tab a {float: left;}
+
+/* Style the links */
+.tab a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {color: #FA9623;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxx SIDEBAR xxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.sidebar {
+    height: 100%;
+    width: 120px;
+    /*position: fixed;
+    z-index: 1;  This makes it take up the entire side of the screen*/
+    float: left;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    border: 1px solid #ccc;    
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidebar a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxx BODY xxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.content_body {
+    height: 100%;
+    width: 90.93%;
+    background-color: white;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 25px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
