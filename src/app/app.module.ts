@@ -11,6 +11,7 @@ import { RulesComponent } from './rules/rules-component.component';
 import { HomeComponent } from './home/home.component';
 
 import { ROUTING } from './app.routing';
+import { HpBarComponent } from './hp-bar/hp-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ROUTING } from './app.routing';
     LoreComponent,
     PlayerComponent,
     RulesComponent,
-    HomeComponent
+    HomeComponent,
+    HpBarComponent
   ],
   imports: [
     BrowserModule,

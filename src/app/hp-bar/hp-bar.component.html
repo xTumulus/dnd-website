@@ -1,0 +1,7 @@
+<label for="hp">Max HP</label>
+<input class="stat hp" type="number" name="hp" [(ngModel)]="maxHP" (keyup)="onChangeHP()">
+<label for="hp">HP</label>
+<input class="stat hp" type="number" name="hp" [(ngModel)]="currentHP" (keyup)="onChangeHP()">
+<div class="hp-bar-container">
+    <div class="hp-bar" [style.width]="barWidth" [attr.color]="barColor"></div>
+</div>
