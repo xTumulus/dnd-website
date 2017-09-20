@@ -3,3 +3,7 @@ html{
     background: url('assets/images/Book.jpg') no-repeat center center fixed;
     background-size: cover;
 }
+
+html {
+  display: flex;
+}
