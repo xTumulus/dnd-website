@@ -2,8 +2,13 @@
 html{
     background: url('assets/images/Book.jpg') no-repeat center center fixed;
     background-size: cover;
+    display: flex;
 }
 
-html {
-  display: flex;
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
 }
